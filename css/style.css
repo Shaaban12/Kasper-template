@@ -1,5 +1,6 @@
 :root {
     --mainColor :#19c8fa;
+    --transparent-color: rgb(15 116 143 / 70%);
 }
 /* Start Golobal Rules */
 *{
@@ -159,24 +160,40 @@ header .form i {
     background-color: rgba(0 0 0 / 60%);
 }
 .home .text {
-    background-color: #19c9fa91;
+    background-color: var(--transparent-color);
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translate(-50%);
+    transform: translateY(-50%);
     width: 50%;
     padding: 50px;
+    display: flex;
+    justify-content: flex-end;
 
 }
 .home .text .content {
-    display: flex;
-    flex-direction: column;
-    
+    max-width: 500px;
 }
 .home .text .content h2 {
-    
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 .home .text .content p {
-    
+    font-size: 15px;
+    line-height: 2;
+}
+.home .change-background-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.home .change-background-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 /* End Home */
