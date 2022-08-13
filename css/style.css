@@ -186,14 +186,32 @@ header .form i {
 }
 .home .change-background-left {
     position: absolute;
-    left: 10px;
+    left: 30px;
     top: 50%;
     transform: translateY(-50%);
 }
 .home .change-background-right {
     position: absolute;
-    right: 10px;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
+}
+.home .bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+}
+.home .bullets li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.home .bullets .active {
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
 }
 /* End Home */
