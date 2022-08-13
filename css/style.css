@@ -16,7 +16,6 @@ html {
 }
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: black;
 }
 ul {
     list-style: none;
@@ -50,6 +49,53 @@ i{
     color: #fff;
 }
 /* End Golobal Rules */
+
+/* Start Component (عناصر تستخدم بكثره) */
+.main-heading {
+    text-align: center;
+}
+.main-heading h2 {
+    position: relative;
+    color: #333;
+    font-weight: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+.main-heading h2::before{
+    position: absolute;
+    content: '';
+    background-color: #333;
+    height: 2px;
+    width: 120px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-heading h2::after{
+    position: absolute;
+    content: '';
+    background-color: white;
+    height: 14px;
+    width: 14px;
+    bottom: -37px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+.main-heading p {
+    color: #777;
+    width: 550px;
+    max-width: 100%;
+    margin: 0 auto 100px;
+    line-height: 2;
+}
+
+.container {
+
+}
+/* End Component (عناصر تستخدم بكثره) */
 
 /* Start header */
 header {
@@ -174,6 +220,14 @@ header .form i {
 .home .text .content {
     max-width: 500px;
 }
+@media (max-width: 767px)  {
+    .home .text {
+        width: 100%;
+    }
+    .home .text .content {
+        max-width: 100%;
+    }
+}
 .home .text .content h2 {
     font-size: 30px;
     font-weight: normal;
@@ -196,6 +250,12 @@ header .form i {
     top: 50%;
     transform: translateY(-50%);
 }
+@media (max-width: 767px) {
+    .home .change-background-left,
+    .home .change-background-right {
+        display: none;
+    }
+}
 .home .bullets {
     position: absolute;
     left: 50%;
@@ -206,12 +266,19 @@ header .form i {
 .home .bullets li {
     width: 20px;
     height: 20px;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.500);
     border-radius: 50%;
     margin-right: 10px;
+}@media (max-width: 767px) {
+    .home .bullets li {
+        width: 10px;
+        height: 10px;
+    }
 }
 .home .bullets .active {
     background-color: var(--mainColor);
     border-color: var(--mainColor);
 }
+/* End Home */
+/* End Home */
 /* End Home */
