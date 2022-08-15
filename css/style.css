@@ -383,3 +383,10 @@ header .form i {
     
 }
 /* End Design */
+
+/* End Design */
+.portfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+/* End Design */
