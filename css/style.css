@@ -476,7 +476,7 @@ header .form i {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 5px);
     background-color: rgba(0 0 0 / 40%);
 }
 .video video {
@@ -510,3 +510,27 @@ header .form i {
     border: none;
 }
 /* End Video */
+
+/* End About */
+.about {
+    padding-top: var(--section-padding);
+    text-align: center;
+    overflow: hidden;
+}
+.about img {
+    position: relative;
+    bottom: -140px;
+    margin-top: -140px;
+    max-width: 100%;
+}
+@media (max-width: 767px) {
+    .about img {
+        bottom: -60px;
+        margin-top: -60px;
+    }
+}
+/* End About */
+
+/* Start Statistics */
+
+/* End Statistics */
