@@ -499,7 +499,7 @@ header .form i {
 }
 .video .text p {
     margin: 40px 0;
-
+    font-weight: normal;
 }
 .video .text button {
     color: white ;
