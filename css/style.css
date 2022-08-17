@@ -481,6 +481,7 @@ header .form i {
 }
 .video video {
     width: 100%;
+    aspect-ratio: 16/9;
 }
 .video .text {
     background-color: var(--transparent-color);
@@ -490,12 +491,22 @@ header .form i {
     width: 100%;
     text-align: center;
     padding: 60px;
-    line-height: 2;
 }
 .video .text h2{
+    text-transform: uppercase;
+    font-weight: normal;
 
 }
 .video .text p {
+    margin: 40px 0;
 
+}
+.video .text button {
+    color: white ;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.500);
+    text-transform: capitalize;
+    box-shadow: 0 0 1rem 0 #fff;
+    border: none;
 }
 /* End Video */
