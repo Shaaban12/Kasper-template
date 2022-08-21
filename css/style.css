@@ -532,5 +532,36 @@ header .form i {
 /* End About */
 
 /* Start Statistics */
-
+.stats {
+    background-image: url(../images/landing2.jpg);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+}
+.stats .container {
+    
+    background-color:var(--transparent-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.stats .container i {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 30px auto 30px;
+}
+.stats .container .number {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+.stats .container p {
+    margin-bottom: 30px;
+}
 /* End Statistics */
