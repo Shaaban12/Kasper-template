@@ -546,27 +546,42 @@ header .form i {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0 0 0 / 40%);
+    background-color: rgba(0 0 0 / 70%);
 }
 .stats .container {
     position: relative;
-    background-color:var(--transparent-color);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+}
+@media (max-width: 767px) {
+    .stats .container .box {
+        flex-basis: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .stats .container .box {
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 991px) {
+    .stats .container .box {
+        flex-basis: 25%;
+    }
 }
 .stats .container .box {
     padding: 50px;
+    background-color:var(--transparent-color);
 }
 .stats .container i {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin: 30px auto 30px;
+    margin: 0 auto 30px;
+    background-color: black;
+    font-size: 30px;
 }
 .stats .container .number {
     font-size: 40px;
