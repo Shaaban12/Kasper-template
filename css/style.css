@@ -594,5 +594,22 @@ header .form i {
 /* End Statistics */
 
 /* Start Skills */
-
+.skills .container {
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills .container > div {
+    flex-basis: 45%;
+}
+.skills .container .testimonials .box {
+    display: flex;
+}
+.skills .container .testimonials .box img{
+    width: 100px;
+    height: 100px;
+}
+.skills .container .testimonials .box {}
+.skills .container .testimonials .box {}
 /* Start Skills */
