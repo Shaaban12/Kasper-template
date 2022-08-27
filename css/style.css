@@ -673,4 +673,76 @@ header .form i {
     background-color: var(--mainColor);
     border-color: var(--mainColor);
 }
+
+.skills .container .prog-holder {
+    margin-bottom: 30px;
+    padding: 5px;
+    
+} 
+.skills .container .prog-holder h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+} 
+.skills .container .prog-holder .prog {
+    background-color: #ccc;
+    height: 20px;
+}
+.skills .container .prog-holder .prog span {
+    position: relative;
+    display: block;
+    background-color: var(--mainColor);
+    height: 100%;
+}
+.skills .container .prog-holder .prog span::before {
+    content: attr(data-progress);
+    position: absolute;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    width: 40px;
+    right: -18px;
+    top: -40px;
+    padding: 4px 0;
+    border-radius: 4px;
+}
+.skills .container .prog-holder .prog span::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: #111 transparent transparent;
+    right: -8px;
+    top: -15px;
+}
+
 /* Start Skills */
+
+/* Start Quote */
+.qoute {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(../images/quote.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.qoute::before {
+    content: '';
+    position: absolute;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0 0 0 / 75%);
+}
+.qoute .container {
+    position: relative;
+}
+.qoute .container q {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/* End Quote */
