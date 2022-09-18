@@ -759,9 +759,16 @@ header .form i {
     gap: 30px;
 }
 .pricing .plans .plan {
-
+    background-color: #fcfcfc;
+    text-align: center;
 }
 .pricing .plans .plan h3 {}
-.pricing .plans .plan span {}
+.pricing .plans .plan .price-num {}
+.pricing .plans .plan .price-num::before {
+    content: "$";
+}
+.pricing .plans .plan .price-num::after {
+    content: "/Mon";
+}
 .pricing .plans .plan ul li{}
 /* End Pricing */
