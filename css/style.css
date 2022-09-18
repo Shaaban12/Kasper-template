@@ -746,3 +746,22 @@ header .form i {
     margin-bottom: 20px;
 }
 /* End Quote */
+
+/* Start Pricing */
+.pricing {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    color: #111;
+}
+.pricing .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+.pricing .plans .plan {
+
+}
+.pricing .plans .plan h3 {}
+.pricing .plans .plan span {}
+.pricing .plans .plan ul li{}
+/* End Pricing */
