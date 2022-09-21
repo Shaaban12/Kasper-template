@@ -762,12 +762,17 @@ header .form i {
     background-color: #fcfcfc;
     text-align: center;
 }
-.pricing .plans .plan h3 {}
-.pricing .plans .plan .price-num {}
-.pricing .plans .plan .price-num::before {
+.pricing .plans .plan .head {
+    padding: 20px;
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
+}
+.pricing .plans .plan .head h3 {}
+.pricing .plans .plan .head .price-num {}
+.pricing .plans .plan .head .price-num::before {
     content: "$";
 }
-.pricing .plans .plan .price-num::after {
+.pricing .plans .plan .head .price-num::after {
     content: "/Mon";
 }
 .pricing .plans .plan ul li{}
