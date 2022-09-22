@@ -908,3 +908,57 @@ header .form i {
     }
 }
 /* End Subscribe */
+
+/* Start Contact */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    color: black;
+}
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+.contact .content form {
+    flex-basis: 70%;
+}
+.contact .content form .main-input {
+    display: block;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.contact .content form .main-input:focus {
+    outline: none;
+}
+.contact .content form textarea.main-input {
+    height: 200px;
+}
+.contact .content form input[type="submit"]{
+    display: flex;
+    background-color: var(--mainColor);
+    color: white;
+    padding: 20px;
+    border: none;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.contact .content .info {
+    flex-basis: 25%;
+}
+.contact .content .info h4 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.contact .content .info  .phone {
+
+}
+.contact .content .info h4:nth-of-type(2) {
+
+}
+.contact .content .info address {}
+/* End Contact */
